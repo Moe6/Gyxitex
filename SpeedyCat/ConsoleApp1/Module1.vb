@@ -12,6 +12,10 @@ Module Module1
         Console.WriteLine("Enter String 2:")
         s2 = Console.ReadLine
         Dim h1 = cryp.EncryptMe(s1)
+
+        h1 = cryp.DecryptMe(s1)
+        Console.WriteLine(h1)
+
         Dim h2 = cryp.EncryptMe(s2)
         Console.WriteLine("")
         Console.WriteLine("Encryption....")
@@ -25,6 +29,8 @@ Module Module1
             Console.WriteLine(h2)
             Console.WriteLine("Input does not match....")
         End If
+        h1 = cryp.DecryptMe(s1)
+        Console.WriteLine(h1)
         Console.ReadLine()
     End Sub
 

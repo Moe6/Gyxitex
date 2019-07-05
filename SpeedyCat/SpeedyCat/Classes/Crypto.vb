@@ -19,8 +19,10 @@ Public Class Crypto
         bytSorde = ASCIIEncoding.ASCII.GetBytes(data & kPepper)
         'compute hassh based on data source 
         bytHash = New MD5CryptoServiceProvider().ComputeHash(bytSorde)
+
         rv = ByteArrayToString(bytHash)
         Return rv
+
     End Function
 
     Private Function ByteArrayToString(ByVal arrInput() As Byte) As String
@@ -42,7 +44,6 @@ Public Class Crypto
 
     Public Function DecryptMe(gbrish As String) As String
         Dim byt As Byte()
-
         Return ByteArrayToString(byt)
     End Function
 End Class
