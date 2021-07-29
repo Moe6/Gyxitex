@@ -70,6 +70,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Crypto.vb" />
+    <Compile Include="Classes\Globals.vb" />
+    <Compile Include="Classes\Helper.vb" />
     <Compile Include="Classes\Log.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
